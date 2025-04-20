@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mens Flow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdfaf2;
+      color: #111;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .saira-font {
+      font-family: 'Saira', sans-serif;
+    }
+
+    .corner-logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      height: 40px;
+      min-width: 40px;
+      padding: 0 10px;
+      border: 1px solid #bbb;
+      font-size: 10px;
+      font-style: italic;
+      font-weight: 300;
+      color: #444;
+      background-color: #fff8f0;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .orbitron-font {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px;
+      margin-top: -30px;
+    }
+
+    .font1 {
+      font-family: 'Gruppo', cursive;
+      font-size: 30px;
+      margin-bottom: 50px;
+
+
+    }
+
+    .font2 {
+      font-family: 'Gruppo', cursive;
+      font-size: 30px;
+      margin-top: 50px;
+    }
+
+    .font3 {
+      font-family: 'Gruppo', cursive;
+      font-size: 30px;
+      margin-top: 50px;
+    }
+
+    .corner-logo span {
+      transition: all 0.3s ease;
+    }
+
+    .corner-logo:hover {
+      padding: 0 18px;
+    }
+
+    .corner-logo:hover span::before {
+      content: 'MensFlow';
+      font-size: 10px;
+    }
+
+    .corner-logo span::before {
+      content: 'MF';
+      transition: content 0.3s ease;
+    }
+
+    nav {
+      margin: 70px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      margin-left: 20px;
+      margin-top: 60px;
+    }
+
+    .button {
+      background-color: #eee;
+      border: none;
+      padding: 5px 18px;
+      margin: 0 5px;
+      border-radius: 12px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      height: 30px;
+      transition: all 0.3s ease; 
+    }
+
+    .button:hover {
+      border-radius: 0px; 
+    }
+
+    .btn-text {
+      display: inline-block;
+      color: black;
+      position: relative;
+      top: 0;
+      transition: all 0.3s ease;
+      font-size: 17px;
+      font-family: 'Gruppo' , cursive;
+      font-weight: 500;
+    }
+
+    .button:hover .btn-text {
+      top: -4px;
+      color: #d6bfa5;
+    }
+
+    .typo {
+      font-size: 70px;
+      margin-top: 150px;
+      margin-left: 60px;
+    }
+
+    .image {
+      margin-top: 70px;
+    }
+
+    .image img {
+      width: 400px;
+      height: auto;
+      transition: transform 0.1s ease-out;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .first-page {
+      margin-bottom: 200px;
+    }
+
+    .logo {
+      position: center;
+      top: 20px;
+      margin-right: 15px;
+    }
+
+    .logo-img {
+      height: 35px;
+      margin-top: 10px;
+      margin-left: 45px;
+    }
+
+    .second-page {
+      width: 100%;
+      height: 120vh;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text-container {
+      width: 50%;
+      text-align: right;
+      margin-right: 50px;
+      margin-bottom: 450px;
+      font-size: 30px;
+    }
+
+    .image-container img {
+      width: 580px;
+      height: 850px;
+      margin-top: 100px;
+      padding-left: 50px;
+    }
+
+    .black-text {
+      color: black;
+      background-color: white;
+      padding: 3px 16px;
+    }
+
+    .third-page {
+      width: 100%;
+      height: 120vh;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .image-container2 img {
+      width: 450px;
+      height: 800px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      margin-top: -50px;
+    }
+
+    .text-container2 {
+      text-align: left;
+      padding-left: 50px;
+      width: 50%;
+      font-size: 30px;
+      margin-bottom: 530px;
+    }
+
+    .zoom-in-on-scroll {
+      transform: scale(0.8);
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+
+    .zoom-in-on-scroll.visible {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .fourth-page {
+      width: 100%;
+      height: 120vh;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .image-container3 img {
+      width: 600px;
+      height: 800px;
+      display: flex;
+      margin-bottom: 100px;
+      justify-content: flex-end;
+      padding-left: 50px;
+    }
+
+    .text-container3 {
+      text-align: right;
+      width: 50%;
+      font-size: 30px;
+      margin-right: 50px;
+      margin-bottom: 600px;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+
+    #loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #fdfaf2;
+  z-index: 2000;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-family: 'Gruppo' , cursive;
+}
+
+#loading-screen.expand {
+  width: 100%;
+}
+
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div id="loading-screen">
+    <div id="loading-text">MENS FLOW</div>
+  </div>
+  
+
+  <div class="corner-logo" onclick="location.reload();"><span></span></div>
+
+  <div class="logo">
+    <img src="image/Mf logo.png" alt="Mf Logo" class="logo-img">
+  </div>
+
+  <nav>
+    <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE FLOW.html')">
+      <span class="btn-text">STYLE FLOW</span>
+    </button>   
+
+    <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE STORY.html')">
+      <span class="btn-text">STYLE STORY</span>
+    </button>
+
+    <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE vs STYLE.html')">
+      <span class="btn-text">STYLE vs STYLE</span>
+    </button>
+
+    <button class="button" onclick="showLoadingAndRedirect('20212485_about.html')">
+      <span class="btn-text">ABOUT US</span>
+    </button>
+  </nav>
+
+  <div class="typo">
+    <span style="font-weight: 100;">“Just Looking, 
+      <span style="text-decoration: line-through; text-decoration-color: rgba(169, 169, 169, 0.5);">"not Buying.”</span>
+    </span>
+  </div>
+
+  <div class="image">
+    <img src="image/home.png" alt="Mens Flow 홈 이미지"/>
+  </div>
+
+  <div class="first-page"></div>
+
+
+
+
+  <div class="second-page">
+    <div class="image-container">
+      <img src="image/styleflow.jpg" alt="styleflow Image" class="zoom-in-on-scroll" />
+    </div>
+    <div class="text-container">
+      <h1>We can find</h1>
+      <h1>1970s ~ 2020s <span class="black-text">Mens Style</span></h1>
+      <p class="font1">#Trend #HipHop #Street #Casual <br>
+      #Y2k #Crop #Funk #Techwear </p>
+    </div>
+  </div>
+
+
+
+  <div class="third-page">
+    <div class="text-container2">
+      <h1>Let's dive into</h1>
+      <h1><span class="black-text">Famous Style</span></h1>
+      <h1>with famous celebrities</h1>
+      <p class="font2"> #G-dragon #Timothée Chalamet #Marlon Noah <br>
+      #How did this look take over the world? </p>
+    </div>
+    <div class="image-container2">
+      <img src="image/stylestory.jpg" alt="stylestory Image" class="zoom-in-on-scroll" />
+    </div>
+  </div>
+
+
+
+  <div class="fourth-page">
+    <div class="image-container3">
+      <img src="image/stylevsstyle.jpg" alt="style vs style Image" class="zoom-in-on-scroll">
+    </div>
+    <div class="text-container3">
+      <h1>1970 style vs 2020 style</h1>
+      <h1>When is the</h1>
+      <h1><span class="black-text">Best trend era?</span></h1>
+      <p class="font3"> #1970 fashion trend #2020 fashion trend <br>
+      #Who is the winner? </p>
+    </div>
+  </div>
+
+
+
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const img = document.querySelector('.image img');
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      const offsetX = (mouseX - windowWidth / 2) * 0.02;
+      const offsetY = (mouseY - windowHeight / 2) * 0.02;
+
+      img.style.transform = `translate(${offsetX}px, ${offsetY}px)`; 
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.zoom-in-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+
+    function showLoadingAndRedirect(url) {
+  const loadingScreen = document.getElementById('loading-screen');
+  const loadingText = document.getElementById('loading-text');
+
+  loadingScreen.classList.add('expand'); // 확장 애니메이션
+  loadingScreen.style.display = 'flex'; // 보여주기
+
+  let dots = 1;
+  const interval = setInterval(() => {
+    loadingText.textContent = 'MENS FLOW' + '.'.repeat(dots);
+    dots = dots === 3 ? 1 : dots + 1;
+  }, 400);
+
+  setTimeout(() => {
+    clearInterval(interval);
+    window.location.href = url;
+  }, 1300); // 애니메이션이 끝나는 시간에 맞춰 이동
+}
+
+
+
+  </script>
+
+</body>
+</html>
