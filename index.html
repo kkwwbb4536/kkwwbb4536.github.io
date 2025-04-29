@@ -177,6 +177,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
     .text-container {
@@ -209,6 +210,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 30px;
+      position: relative;
     }
 
     .image-container2 img {
@@ -248,6 +250,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 30px;
+      position: relative;
     }
 
     .image-container3 img {
@@ -295,6 +298,52 @@
 #loading-screen.expand {
   width: 100%;
 }
+
+.floating-btn {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+
+.floating-btn2 {
+  position: absolute;
+  left: 50px;  
+  bottom: 50px; 
+  z-index: 10;
+  margin-bottom: 140px;
+}
+
+.floating-btn3 {
+  position: absolute;
+  right: 50px;  
+  bottom: 50px; 
+  z-index: 10;
+  margin-bottom: 200px;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background-color: #fdfaf2;
+  transform: translateX(-50%) scale(1.1);
+}
+
+
 
 
 
@@ -344,7 +393,7 @@
 
   <div class="typo">
     <span style="font-weight: 100;">“Just Looking, 
-      <span style="text-decoration: line-through; text-decoration-color: rgba(169, 169, 169, 0.5);">"not Buying.”</span>
+      <span style="text-decoration: line-through; text-decoration-color: #f5e8da;">"not Buying.”</span>
     </span>
   </div>
 
@@ -367,6 +416,11 @@
       <p class="font1">#Trend #HipHop #Street #Casual <br>
       #Y2k #Crop #Funk #Techwear </p>
     </div>
+    <div class="floating-btn">
+      <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE FLOW.html')">
+        <span class="btn-text">STYLE FLOW</span>
+      </button>
+    </div>
   </div>
 
 
@@ -381,6 +435,11 @@
     </div>
     <div class="image-container2">
       <img src="image/stylestory.jpg" alt="stylestory Image" class="zoom-in-on-scroll" />
+    </div>
+    <div class="floating-btn2">
+      <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE STORY.html')">
+        <span class="btn-text">STYLE STORY</span>
+      </button>
     </div>
   </div>
 
@@ -397,7 +456,17 @@
       <p class="font3"> #1970 fashion trend #2020 fashion trend <br>
       #Who is the winner? </p>
     </div>
+    <div class="floating-btn3">
+      <button class="button" onclick="showLoadingAndRedirect('20212485_STYLE vs STYLE.html')">
+        <span class="btn-text">STYLE vs STYLE</span>
+      </button>
+    </div>
   </div>
+
+<div class="scroll-top-btn" id="scroll-top-btn">
+  ↑
+</div>
+
 
 
 
@@ -437,8 +506,8 @@
   const loadingScreen = document.getElementById('loading-screen');
   const loadingText = document.getElementById('loading-text');
 
-  loadingScreen.classList.add('expand'); // 확장 애니메이션
-  loadingScreen.style.display = 'flex'; // 보여주기
+  loadingScreen.classList.add('expand'); 
+  loadingScreen.style.display = 'flex'; 
 
   let dots = 1;
   const interval = setInterval(() => {
@@ -449,8 +518,16 @@
   setTimeout(() => {
     clearInterval(interval);
     window.location.href = url;
-  }, 1300); // 애니메이션이 끝나는 시간에 맞춰 이동
+  }, 1300); 
 }
+
+document.getElementById('scroll-top-btn').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });
+});
+
 
 
 
