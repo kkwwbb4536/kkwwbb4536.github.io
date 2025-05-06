@@ -178,14 +178,46 @@
 
 
 
-
     .first-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: auto;
 }
 
 
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.top-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.right-image-box,
+.right-image-box2 {
+  width: 450px;
+  height: 550px;
+  background-color: #f5e8da;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
 
 .right-image-box {
   gap: 20px;
@@ -195,9 +227,7 @@
   border-radius: 30px;
   margin-left: auto;
   margin-right: 50px;
-  margin-bottom: 250px;
-  position:
-  
+  margin-bottom: 250px; 
 }
 
 .right-image-box img {
@@ -205,9 +235,22 @@
     height: 500px;
     margin-top: 20px;
     margin-left: 20px;
-
-
 }
+
+
+.styleflow-title-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -300px;
+  margin-right: 100px;
+}
+
+.styleflow-title-img img{
+width: 820px;
+height: 170px;
+}
+
 
 .right-image-box2 {
   gap: 20px;
@@ -215,15 +258,13 @@
   width: 450px;
   height: 900px;
   border-radius: 30px;
-  margin-right: 100px;
-  margin-top: 100px;
+  margin-right: 80px;
 }
 
 .right-image-box2 img {
   width: 250px;
   height: 800px;
   margin-top: 15px;
-
 }
 
 .right-image-box,
@@ -234,16 +275,9 @@
 
 .right-image-box:hover,
 .right-image-box2:hover {
-  transform: scale(1.05); /* 살짝 확대 */
+  transform: scale(1.05);
 }
 
-
-
-.text-container {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    margin-top: 50px;
-}
 
 
 .tooltip {
@@ -289,7 +323,7 @@
 .filter-container {
   position: absolute;
   top: 150px;
-  left: 20px;
+  left: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -298,6 +332,8 @@
   padding: 20px 10px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-left: 2px;
+  margin-top: 40px;
 }
 
 .filter-title {
@@ -354,11 +390,11 @@
 
 
 
-
 .second-page {
-  min-height: 150vh; 
+  min-height: 130vh; 
   background-color: #fdfaf2;
-  padding: 300px 40px;
+  padding: 10px 20px;
+  margin-top: 300px;
 }
 
 .second-title {
@@ -376,7 +412,7 @@
 }
 
 .box {
-  background-color: #eee; /* nav 버튼 배경색 */
+  background-color: #eee; 
   color: #333;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
@@ -401,8 +437,481 @@
 }
 
 
-        </style>
-    </head>
+
+
+.third-page {
+  min-height: 150vh; 
+  background-color: #fdfaf2;
+  padding: 10px 20px;
+}
+
+.third-title {
+  font-family: 'Gruppo', cursive;
+  font-size: 95px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.box-container2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box3 {
+  background-color: #eee; 
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  width: 170px;
+}
+
+
+.box3{
+  background-color: #eee; 
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  width: 170px;
+}
+
+.third-title {
+  font-family: 'Gruppo', cursive;
+  font-size: 70px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+
+
+
+.right-container2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.top-row2 {
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+  align-items: stretch;
+}
+
+
+.top-images2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.right-image-box11 {
+  gap: 20px;
+  background-color: #f5e8da;
+  width: 550px;
+  height: 550px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 300px; 
+}
+
+.right-image-box22 {
+  gap: 20px;
+  background-color: #f5e8da;
+  width: 500px;
+  height: 850px;
+  border-radius: 30px;
+  margin-right: 60px;
+}
+
+.right-image-box11 img {
+  width: 300px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.right-image-box22 img {
+  width: 250px;
+  height: 800px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+
+.right-container2 .hover-box {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.right-container2 .hover-box:hover {
+  transform: scale(1.05);
+  z-index: 100;
+}
+
+
+.right-image-box11,
+.right-image-box22 {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.right-image-box11:hover,
+.right-image-box22:hover {
+  transform: scale(1.05);
+}
+
+
+
+.styleflow-title-img2 {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.styleflow-title-img2 img {
+  width: 820px;
+  height: 170px;
+}
+
+
+
+
+.right-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-row3 {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.top-images3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.right-image-box33 {
+  background-color: #f5e8da;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: 70px;
+  margin-bottom: 250px;
+  width: 400px;
+  height: 550px;
+}
+
+.right-image-box44 {
+  background-color: #f5e8da;
+  border-radius: 30px;
+  margin-right: 50px;
+  margin-bottom: 250px;
+  width: 300px;
+  height: 650px;
+}
+
+
+
+.right-image-box33 img {
+  width: 350px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.right-image-box44 img {
+  width: 250px;
+  height: 600px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+
+.styleflow-title-img3 {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 150px;
+  left: 20px;
+}
+
+.styleflow-title-img3 img {
+  width: 820px;
+  height: 150px;
+}
+
+.hairimage-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 150px;
+  gap: 60px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  position: relative;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+
+.hair-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.Acc-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  gap: 150px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  position: relative;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+
+.Acc-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bg-square {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  width: 150px;
+  height: 400px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square2 {
+  position: absolute;
+  top: 40px;
+  left: 23px;
+  width: 260px;
+  height: 370px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square3 {
+  position: absolute;
+  top: 80px;
+  right: 3px;
+  width: 310px;
+  height: 330px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square4 {
+  position: absolute;
+  top: 60px;
+  right: 3px;
+  width: 280px;
+  height: 350px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square5 {
+  position: absolute;
+  top: 30px;
+  right: 3px;
+  width: 250px;
+  height: 400px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square6 {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 300px;
+  height: 400px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square11 {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  width: 150px;
+  height: 400px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square22 {
+  position: absolute;
+  top: 40px;
+  left: 23px;
+  width: 260px;
+  height: 370px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square33 {
+  position: absolute;
+  top: 80px;
+  right: 3px;
+  width: 310px;
+  height: 330px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square44 {
+  position: absolute;
+  top: 60px;
+  right: 3px;
+  width: 280px;
+  height: 350px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bg-square55 {
+  position: absolute;
+  top: 30px;
+  right: 3px;
+  width: 250px;
+  height: 400px;
+  background-color: #dcdcdc;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hair-image {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+}
+
+.hair-image2 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.hair-image3 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 95px;
+}
+
+.hair-image4 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 70px;
+}
+
+.hair-image5 {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  margin-top: 45px;
+  height: 400px;
+}
+
+.hair-image6 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 15px;
+  height: 430px;
+  margin-left: 20px;
+}
+
+
+
+.Acc-image {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 160px;
+}
+
+.Acc-image2 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+.Acc-image3 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 80px;
+}
+
+.Acc-image4 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 190px;
+}
+
+.Acc-image5 {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  margin-top: 45px;
+  height: 400px;
+}
+
+.Acc-image6 {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-top: 15px;
+  height: 430px;
+  margin-left: 20px;
+}
+
+
+
+
+  </style>
+</head>
 
     <body>
         <div class="corner-logo" onclick="location.reload();"><span></span></div>
@@ -437,7 +946,6 @@
 
 
         <div class="first-page">
-          
 
           <div class="filter-container">
             <div class="filter-title">Filter</div>
@@ -448,35 +956,150 @@
             <button class="filter-button" onclick="changeDecade('2010')">2010</button>
             <button class="filter-button" onclick="changeDecade('2020')">2020</button>
           </div>
-          
-              <div class="right-image-box hover-box" data-info="This is 1970s street style.">
-                <img src="image/1970 fashion example2.png" alt="Style 1">
-                <div class="text-container">
-                </div>
-              </div>
-              
-              <div class="right-image-box2 hover-box" data-info="This is 1970s classic formal-look.">
-                <img src="image/1970 fashion example.png" alt="Style 2">
-              </div>
-              <div id="tooltip" class="tooltip"></div>
-              </div>
-
-
-              <div class="second-page" id="second-page">
-                <p class="second-title">"Men's Hair style"</p>
-                <div class="box-container">
-                  <div class="box">
-                    <p>#Category</p>
-                  </div>
-                  <div class="box">
-                    <p>#Trend Hair</p>
-                  </div>
-                </div>
-                <div class="box-container">
-                  <div class="box2">
-                    <p>#1970 - 2020</p>
+        
+          <!-- 1970s Style -->
+          <div class="right-container" id="right-container-1970">
+            <div class="top-row">
+              <div class="top-images" id="image-container">
+                <div class="right-image-box hover-box" data-info="This is 1970s street style.">
+                  <img src="image/1970 fashion example2.png" alt="Style 1">
                 </div>  
-              </div>              
+        
+                <div class="right-image-box2 hover-box" data-info="This is 1970s classic formal-look.">
+                  <img src="image/1970 fashion example.png" alt="Style 2">
+                </div>
+              </div>
+        
+              <div id="tooltip" class="tooltip"></div>
+        
+              <div class="styleflow-title-img">
+                <img src="image/styleflow title.png" alt="StyleFlow Title">
+              </div>
+            </div> 
+          </div>
+        
+          <!-- 1980s Style -->
+          <div class="right-container2" id="right-container-1980" style="display: none;">
+            <div class="top-row2">
+              <div class="top-images2" id="image-container2">
+                <div class="styleflow-title-img2">
+                  <img src="image/styleflow title2.png" alt="StyleFlow Title 2">
+                </div>
+              </div> 
+        
+              <div class="right-image-box11 hover-box" data-info="This is 1980s funk stripe style.">
+                <img src="image/1980_1.png" alt="Style 1">
+              </div>  
+              <div class="right-image-box22 hover-box" data-info="This is 1980s formal-look.">
+                <img src="image/1980_2.png" alt="Style 2">
+              </div>
+            </div>
+          </div>
+        
+          <!-- 1990s Style -->
+          <div class="right-container3" id="right-container-1990" style="display: none;">
+            <div class="top-row3">
+              <div class="top-images3" id="image-container3">
+                <div class="styleflow-title-img3">
+                  <img src="image/styleflow title3.png" alt="StyleFlow Title 3">
+                </div>
+              </div>
+        
+              <div class="right-image-box33 hover-box" data-info="This is 1990s grunge style.">
+                <img src="image/1990_2.png" alt="Style 1">
+              </div>  
+              <div class="right-image-box44 hover-box" data-info="This is 1990s formal-look.">
+                <img src="image/1990_1.png" alt="Style 2">
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        
+        
+        
+
+       
+
+        <div class="second-page" id="second-page">
+          <p class="second-title">"Men's Hair style"</p>
+          <div class="box-container">
+            <div class="box">
+              <p>#Category</p>
+            </div>
+            <div class="box">
+              <p>#Trend Hair</p>
+            </div>
+          </div>
+          <div class="box-container">
+            <div class="box2">
+              <p>#1970 - 2020</p>
+            </div>  
+          </div> 
+          <div class="hairimage-container" id="hairScrollContainer">
+            <div class="hair-image-wrapper">
+              <div class="bg-square"></div>
+              <img src="image/1970hair.png" alt="Hair Style 1" class="hair-image">
+            </div>
+            <div class="hair-image-wrapper">
+              <div class="bg-square2"></div>
+              <img src="image/1980hair.png" alt="Hair Style 2" class="hair-image2">
+            </div>
+            <div class="hair-image-wrapper">
+              <div class="bg-square3"></div>
+              <img src="image/1990hair.png" alt="Hair Style 3" class="hair-image3">
+            </div>
+            <div class="hair-image-wrapper">
+              <div class="bg-square4"></div>
+              <img src="image/2000hair.png" alt="Hair Style 4" class="hair-image4">
+            </div>
+            <div class="hair-image-wrapper">
+              <div class="bg-square5"></div>
+              <img src="image/2010hair.png" alt="Hair Style 5" class="hair-image5">
+            </div>
+            <div class="hair-image-wrapper">
+              <div class="bg-square6"></div>
+              <img src="image/2020hair.png" alt="Hair Style 6" class="hair-image6">
+            </div>
+          </div>
+        </div> 
+        
+
+      <div class="third-page" id="third-page">
+          <p class="third-title">"Men's Acc style"</p>
+          <div class="box-container2">
+            <div class="box3">
+              <p>#Category</p>
+            </div>
+            <div class="box3">
+              <p>#Trend Acc</p>
+            </div>
+          </div>
+          <div class="box-container2">
+            <div class="box3">
+              <p>#1970 - 2020</p>
+            </div>  
+          </div> 
+          <div class="Acc-container" id="AccScrollContainer">
+            <div class="Acc-image-wrapper">
+              <img src="image/1970 acc.png" alt="Acc Style 1" class="Acc-image">
+            </div>
+            <div class="Acc-image-wrapper">
+              <img src="image/1980 acc.png" alt="Acc Style 2" class="Acc-image2">
+            </div>
+            <div class="Acc-image-wrapper">
+              <img src="image/1990 acc.png" alt="Acc Style 3" class="Acc-image3">
+            </div>
+            <div class="Acc-image-wrapper">
+              <img src="image/2000 acc.png" alt="Acc Style 4" class="Acc-image4">
+            </div>
+            <div class="Acc-image-wrapper">
+              <img src="image/2010 acc.png" alt="Acc Style 5" class="Acc-image5">
+            </div>
+          </div>
+        </div> 
+
+
     </body>
 
 
@@ -558,37 +1181,29 @@
     });
   });
 
-function changeDecade(decade) {
-  // 버튼 스타일 초기화
-  document.querySelectorAll('.filter-button').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  // 선택한 버튼 활성화
-  document.querySelector(`.filter-button[onclick*="${decade}"]`).classList.add('active');
+  function changeDecade(decade) {
+  // 모든 컨테이너 숨기기
+  document.querySelector('.right-container').style.display = 'none';
+  document.querySelector('.right-container2').style.display = 'none';
+  document.querySelector('.right-container3').style.display = 'none';
 
-  // 이미지 컨테이너만 업데이트
-  const imageContainer = document.getElementById('image-container');
-  imageContainer.innerHTML = ''; 
-
-  if (decade === '1970') {
-    imageContainer.innerHTML = `
-      <div class="right-image-box hover-box" data-info="This is 1970s street style.">
-        <img src="image/1970 fashion example2.png" alt="Style 1">
-      </div>
-      <div class="right-image-box2 hover-box" data-info="This is 1970s classic formal-look.">
-        <img src="image/1970 fashion example.png" alt="Style 2">
-      </div>
-    `;
-  } else if (decade === '1980') {
-    imageContainer.innerHTML = `
-      <div class="right-image-box hover-box" data-info="1980s streetwear with bold colors.">
-        <img src="image/1980 example1.png" alt="Style 1">
-      </div>
-      <div class="right-image-box2 hover-box" data-info="1980s formal suit with shoulder pads.">
-        <img src="image/1980 example2.png" alt="Style 2">
-      </div>
-    `;
+  // 선택된 시대에 맞는 컨테이너 보이기
+  if (decade === '1980') {
+    document.querySelector('.right-container2').style.display = 'block';
+  } else if (decade === '1970') {
+    document.querySelector('.right-container').style.display = 'block';
+  } else if (decade === '1990') {
+    document.querySelector('.right-container3').style.display = 'block';
   }
+
+  // 필터 버튼 상태 업데이트
+  const filterButtons = document.querySelectorAll('.filter-button');
+  filterButtons.forEach(button => {
+    button.classList.remove('active'); // 모든 버튼의 active 클래스 제거
+    if (button.textContent === decade) {
+      button.classList.add('active'); // 선택된 버튼에 active 클래스 추가
+    }
+  });
 
   // 툴팁 다시 연결
   const newHoverBoxes = document.querySelectorAll('.hover-box');
@@ -606,6 +1221,33 @@ function changeDecade(decade) {
     });
   });
 }
+const scrollContainer = document.getElementById('hairScrollContainer');
+  let scrollSpeed = 0;
+
+  scrollContainer.addEventListener('mousemove', (e) => {
+    const bounds = scrollContainer.getBoundingClientRect();
+    const mouseX = e.clientX - bounds.left;
+    const edgeZone = 100;
+
+    if (mouseX < edgeZone) {
+      scrollSpeed = -200; // 왼쪽
+    } else if (mouseX > bounds.width - edgeZone) {
+      scrollSpeed = 200; // 오른쪽
+    } else {
+      scrollSpeed = 0; // 중앙
+    }
+  });
+
+  scrollContainer.addEventListener('mouseleave', () => {
+    scrollSpeed = 0;
+  });
+
+  function autoScroll() {
+    scrollContainer.scrollLeft += scrollSpeed;
+    requestAnimationFrame(autoScroll);
+  }
+
+  autoScroll();
 
 
     </script>
